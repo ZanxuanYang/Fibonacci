@@ -1,0 +1,8 @@
+def fib(n):
+    if n <= 2:
+        return 1;
+    else:
+        list_1 = [1,1]
+        for i in range(2,n):
+            list_1.append(list_1[-1]+list_1[-2])
+        return list_1[-1]
